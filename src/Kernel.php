@@ -35,4 +35,9 @@ class Kernel extends BaseKernel
             $routes->import('../config/{routes}.php');
         }
     }
+
+    public function getProjectDir(): string
+    {
+        return \dirname(__DIR__);
+    }
 }
